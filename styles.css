@@ -10,7 +10,7 @@ body {
   background-color: #1c1c1c;
   color: white;
   font-family: "Roboto Mono";
-  font-size: 16;
+  font-size: calc(10px + 0.290625vw);
   font-weight: 500;
 }
 
