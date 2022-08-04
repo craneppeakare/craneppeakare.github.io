@@ -40,8 +40,8 @@ a {
 }
 
 .circle {
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
   /* border: 2px solid white; */
   border-radius: 50%;
   margin: 0 auto;
@@ -53,16 +53,16 @@ a {
 }
 
 .circle-backdrop {
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
   background-color: #394d5c;
   /* border: 2px solid white; */
   border-radius: 50%;
   margin: 0 auto;
   z-index: -1;
   position: relative;
-  bottom: 205px;
-  right: 15px;
+  bottom: 187px;
+  right: 13px;
 }
 
 .line0 {
