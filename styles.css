@@ -1,0 +1,197 @@
+
+:root {
+  --main-color: #5c7c94;
+  --bold-color: #9CD9F0;
+  --secondary-color: gray;
+}
+
+body {
+  margin: 50;
+  background-color: #1c1c1c;
+  color: white;
+  font-family: "Roboto Mono";
+  font-size: 16;
+  font-weight: 500;
+}
+
+p {
+  color: var(--main-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a {
+  color: var(--bold-color)
+}
+
+.terminal {
+  /* border: 2px solid white; */
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  /* background-color: #807e82; */
+}
+
+.folder {
+  font-weight: 700;
+  color: var(--bold-color);
+}
+
+.circle {
+  height: 250px;
+  width: 250px;
+  /* border: 2px solid white; */
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.circle img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.circle-backdrop {
+  height: 250px;
+  width: 250px;
+  background-color: #394d5c;
+  /* border: 2px solid white; */
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: -1;
+  position: relative;
+  bottom: 230px;
+  right: 10px;
+}
+
+.line0 {
+  width: 25%;
+  animation: typing 2s 1s forwards;
+}
+
+.cursor0 {
+  opacity: 0%;
+  animation: blink 1s 1s 2 backwards;
+}
+
+.line1 {
+  width: 0%;
+  animation: typing2 3s 3s forwards;
+}
+
+.cursor1 {
+  opacity: 0%;
+  animation: blink 1s 4s 2 backwards;
+}
+
+.line1-2 {
+  color: var(--secondary-color);
+  text-align: center;
+  opacity: 0%;
+  animation: popup 1s 6s forwards;
+}
+
+.line2 {
+  width: 0%;
+  animation: typing2 3s 6s forwards;
+}
+
+.cursor2 {
+  opacity: 0%;
+  animation: blink 1s 7s 2 backwards;
+}
+
+.line2-2 {
+  color: var(--secondary-color);
+  opacity: 0%;
+  animation: popup 1s 9s forwards;
+}
+
+.line3 {
+  width: 0%;
+  animation: typing2 3s 9s forwards;
+}
+
+.cursor3 {
+  opacity: 0%;
+  animation: blink 1s 11s 2 backwards;
+}
+
+.line3-2 {
+  color: var(--secondary-color);
+  opacity: 0%;
+  animation: popup 1s 13s forwards;
+}
+
+.line4 {
+  opacity: 0%;
+  animation: popup 1s 13s forwards;
+}
+
+.cursor4 {
+  animation: blink 1s infinite;
+}
+
+.plain-line {
+  color: var(--secondary-color);
+}
+
+@keyframes typing {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes typing2 {
+  0% {
+    width: 31%;
+  }
+  40% {
+    width: 31%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0%;
+  }
+  1% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
