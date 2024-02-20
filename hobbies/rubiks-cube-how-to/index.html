@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>The Rubik&#39;s Cube: An Icon of Pop Culture and Solvable Puzzle for Everyone (With Visuals) &ndash; craneppeakare</title>
+<meta name="description" content=" Hey there! I&#39;m a life-long ultralearner, programmer, guitarist, gamer, translator, and many other things!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://craneppeakare.github.io/css/palettes/tokyo-night-dark.css">
+<link rel="stylesheet" href="https://craneppeakare.github.io/css/risotto.css">
+<link rel="stylesheet" href="https://craneppeakare.github.io/css/custom.css">
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="https://craneppeakare.github.io/" class="page__logo-inner">craneppeakare</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/books/" title="Books">Books</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://craneppeakare.github.io/hobbies/" title="Hobbies">Hobbies</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/post/" title="Posts">Posts</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/projects/" title="Projects">Projects</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>The Rubik&rsquo;s Cube: An Icon of Pop Culture and Solvable Puzzle for Everyone (With Visuals)</h1>
+    </header>
+    
+    <div class="content__body">
+        <p><img src="https://images.unsplash.com/photo-1562975327-29a8cbfd5be6" alt="Cover Image"></p>
+<p>The Rubik&rsquo;s Cube, invented in 1974 by Ernő Rubik, is a icon of pop culture appearing in major shows such as The Big Bang Theory, The Simpsons, various Spiderman movies, and even in Rick and Morty. Although pop culture loves to portray the puzzle as if only geniuses can solve the cube, in reality anyone can learn to solve one is as little as 5 minutes. And if you invest a little bit more time you can gain the skills to solve it in under 60 seconds and impress all your friends.</p>
+<p>This article serves as a beginner&rsquo;s introduction to solving the Rubik&rsquo;s cube. We will layout the steps and foundation for the beginner&rsquo;s method&ndash;which is the easiest method to learn for a beginner. And yes that does imply there are many other methods to solving a Rubik&rsquo;s cube which MAYBE I will look to cover?? We&rsquo;ll see. But let&rsquo;s first begin by dispelling some popular misconceptions about the Rubik&rsquo;s cube.</p>
+<h2 id="popular-misconceptions">Popular Misconceptions</h2>
+<ul>
+<li>You do not need to be &ldquo;good at math&rdquo; to solve a Rubik&rsquo;s cube</li>
+<li>You do not need to solve each colour at a time (More on this later)</li>
+<li>There is no &ldquo;trick&rdquo; to solving the Rubik&rsquo;s Cube. It&rsquo;s not magic, and you don&rsquo;t just repeat 2 moves over and over again.</li>
+<li>A longer scramble does not necessarily mean a harder solve. It&rsquo;s been proven that every scramble that exists can mathematically be solved in 20 moves or less, also known as &ldquo;God&rsquo;s number&rdquo;. But you can also get a scramble in such a way where it leaves the Rubik&rsquo;s cube one move away from being solved.</li>
+</ul>
+<h2 id="building-intuition">Building Intuition</h2>
+<p>This section aims to build a bit of intuition before jumping into the theory and notation. If you&rsquo;ve already messed around with the cube feel free to skip this section. But if not, I implore you to grab your nearest available cube and start scrambling away! (Don&rsquo;t worry, we&rsquo;ll teach you how to fix it).</p>
+<p>Just twist and turn the sides and notice how the pieces move together. A good exercise is to try to choose a colour and attempt solve that one colour. Like I mentioned in the misconceptions section, this isn&rsquo;t how you solve a Rubik&rsquo;s cube but it&rsquo;s a good exercise to get familiar with it much like getting in a good warm-up before exercising.</p>
+<p>As you proceed with the exercise, watch how some colours interact with others and keep in mind that the cube is comprised of 21 pieces. 12 edge pieces that have 2 colours, 8 corner pieces that have 3 colours, and a core that includes all the center colours. The core also means that white will always be opposite of yellow, the same goes for blue and green, and red and orange. Now, instead of just the coloured stickers you should be able to see how each individual piece moves and how it affects the stickers that are on that piece.</p>
+<h2 id="notation">Notation</h2>
+<p>Now we get into the notation, the heart of the speed solving community. We need notation for 2 reasons: 1) to communicate algorithms, cube states, and methods, with each other and 2) keeping score and ensuring we can recreate scrambles and problems and innovate. And best of all, it&rsquo;s super simple! All you need to know is which way is clockwise rotation (abbreviated as CW) and which way is counter-clockwise rotation (abbreviated as CCW).</p>
+<p>First, we need to choose a side. Let&rsquo;s choose green for simplicity, position the cube such that the green center sticker is facing you and the yellow center sticker is on top facing the sky. You may use the visual below to guide you. &ldquo;F&rdquo; stands for a CW rotation of the front face, in this case the green center sticker. &ldquo;F&rsquo;&rdquo; stands for a CCW rotation of the front face. The same applies for the rest of the sides. L for left side (red in this case), R for right (orange), U for upper (yellow), D for down (white), and B for back (blue). If there is a number 2 next to the letter, eg. &ldquo;U2&rdquo;, it just means to turn twice, CW or CWW does not matter as it yields the same result. The only &ldquo;special&rdquo; case is whenever you have a B or B&rsquo; you should turn the cube around 180 degrees to face the back side and do a CW turn for B or CWW turn for B&rsquo; then turn it back around. It&rsquo;s very easy to get confused on which way to turn the back side so turning the cube around is always a safe way to check.</p>
+<p>The following image provides a visual for each rotation notation.</p>
+<p><img src="/images/cube_notation.png" alt="A chart visually describing all cube notation"></p>
+<h2 id="the-beginners-method">The Beginner&rsquo;s Method</h2>
+<h3 id="step-one-the-cross">Step One: The Cross</h3>
+<p>First we must make a white cross and in order to do so, first look for the edge pieces with a white sticker on them. Position the edge pieces such that the white sticker is next to the yellow center sticker. After correctly position four of these edge pieces your cube should look like the below (gray colours mean they do not matter what colour):</p>
+<p><img src="/images/white_cross_step1.png" alt="An image showing 4 white edge stickers next to the yellow center sticker"></p>
+<p>Next find the white and green edge piece you just placed next to the yellow center. Rotate the yellow side such that the green edge sticker is next to the green center. Then turn the green sticker face twice. The white and green edge piece should now be in the correct slot in between the green and white centers. Continue this process with the other 3 edge pieces next to the yellow center to complete the white cross. Flipping the cube over should yield the resulting image below:</p>
+<p><img src="/images/white_cross.png" alt="An image showing 4 white edge stickers around the white center"></p>
+<h3 id="step-two-first-layer-corners">Step Two: First Layer Corners</h3>
+<p>From this point on, the white center sticker will now be facing down and the yellow center sticker will face upwards to the sky. You may turn the cube around to look at different sides but unless otherwise stated white should always be facing down and yellow up.</p>
+<p>In order to place the corners in the right spots and orientation there are 3 cases we need to look at. Case 1 is where the corner is at the top and the white sticker is facing outwards. Case 2 is where the white sticker is facing upwards. And case 3 is where the corner is at the bottom in any position or orientation that is not correct. Begin by looking for all corners with Case 1 first since they are the easiest, then Case 2, then Case 3.</p>
+<h4 id="case-1">Case 1</h4>
+<p>Case 1 is the easiest case. Look for a corner piece with a white sticker that points outwards. Twist the upper side until the adjacent sticker on the side matches it&rsquo;s center piece. If the corner is in the upper right corner perform the algorithm R U R&rsquo; to place it in the right spot. If it&rsquo;s in the upper left corner do the mirror algorithm L&rsquo; U&rsquo; L.</p>
+<p><img src="/images/corners_case1.png" alt="An image showing how the cube should look before and after the slotting algorithm"></p>
+<h4 id="case-2">Case 2</h4>
+<p>Case 2 is when the white sticker is facing upwards. Position the cube such that the yellow sticker faces up and the corner is in the upper right corner and do the following algorithm: R U&rsquo; R&rsquo; F R&rsquo; F&rsquo; R U2. In order to twist the corner as shown below.</p>
+<p><img src="/images/corners_step1.png" alt="An image showing how to use the algorithm to twist a corner to setup case 1"></p>
+<p>This converts a Case 2 into a Case 1. Proceed to slot the corner in the right spot using case 1.</p>
+<h4 id="case-3">Case 3</h4>
+<p>Case 3 is the longest one to solve which is why we leave it for last. If you&rsquo;re lucky, you won&rsquo;t have any case 3s! But it&rsquo;s not any more difficult than the above cases. Simply position the corner so that it&rsquo;s on the bottom left or bottom right front facing corner and perform the same algorithm seen in Case 1 to bring the corner piece to the upper layer. This can result in converting the corner to either a Case 1 or 2.</p>
+<p><img src="/images/corners_case3.png" alt="An image showing how to use the algorithm to kick out a corner piece from the bottom"></p>
+<p>At this point you should have completed the entire first layer! Which means all the pieces around the white face should be complete and in the right orientation, congrats!</p>
+<p><img src="/images/layer1_complete.png" alt="An image showing the first layer of the cube (white side) solved"></p>
+<h3 id="step-three-second-layer-edges">Step Three: Second Layer Edges</h3>
+<p>Next we slot the edge pieces on the second layer to their correct positions. There are 4 of these and they can be found in one of 2 cases. Case 1 is when it&rsquo;s found on the top layer. Case 2 is when it&rsquo;s found in the second layer put in the wrong position.</p>
+<h4 id="case-1-1">Case 1</h4>
+<p>If the edge piece is on the top, then position it so that it matches it&rsquo;s center sticker on the side. Now have the adjacent sticker facing you as the front face and perform the algorithm U&rsquo; F&rsquo; U&rsquo; F U (R U R&rsquo;) or U F U F&rsquo; U&rsquo; (L&rsquo; U&rsquo; L). Notice how the part in brackets is the same algorithm from setting up the corners! The brackets are just to make it easier to memorize, and this sequence of 3 moves are very common so it&rsquo;s worthwhile to remember it as a single move.</p>
+<p><img src="/images/layer2_edges_case1.png" alt="An image showing how to slot in an edge piece to the correct side"></p>
+<h4 id="case-2-1">Case 2</h4>
+<p>If the edge piece is on the second layer and in the incorrect spot, we first need to kick it out and convert it to case 1. Simply do the same algorithm as case 1 without the first U move depending on if the edge is to the left or right of the front face.</p>
+<p><img src="/images/layer2_edges_case2.png" alt="An image showing how to kick out an incorrect edge piece to the upper layer"></p>
+<p>And after you slot the 4 edge pieces in their correct spots, you will have finished 2 layers of the cube! Now there&rsquo;s only one layer left and it&rsquo;s split into 2 parts. Orienting Last Layer (OLL) and Permuting Last Layer (PLL). Which basically in normal speak means finishing the all the yellow stickers and positioning them in the right spots.</p>
+<h3 id="step-four-orienting-last-layer-oll">Step Four: Orienting Last Layer (OLL)</h3>
+<p>In order to orient all the yellow sticker so that they face up, we must first build the yellow cross. This is very easy to do and only requires one short algorithm, F U R U&rsquo; R&rsquo; F&rsquo;. There are only 4 states and you just need to identify the state, orient the cube, and perform the algorithm to get to the next state until you hit the cross.</p>
+<p><img src="/images/oll_cross.png" alt="An image showing how to create the yellow cross"></p>
+<p>Now that your cross is complete, check how many yellow corners you have correctly facing up. You may have 0, 1, or 2, but never 3 complete corners. If there&rsquo;s 1, position the cube such that the completed corner is on the bottom left. In any other case the position does not matter. Then do the algorithm (R U R&rsquo;) U R U2 R&rsquo;. If it didn&rsquo;t fully solve you may need to do it again once more. And if you came from either 0 or 2 complete corners you may have to repeat the algorithm multiple times before you end up with 1 complete corner.</p>
+<p><img src="/images/oll_final.png" alt="An image showing how to use the algorithm to orient all yellow stickers to face up"></p>
+<h3 id="step-five-permuting-last-layer-pll">Step Five: Permuting Last Layer (PLL)</h3>
+<p>This is the final step to solving your first Rubik&rsquo;s cube! Hang on in there as we&rsquo;re so close!</p>
+<p>For PLL there are 2 main steps: permuting the corners and permuting the edges. Let&rsquo;s first begin with the corners. Look for a matching pair of corner stickers on the same side which we like to call &ldquo;headlights&rdquo;. And position that face to the left. Then perform the algorithm: L&rsquo; U R U&rsquo; L U R&rsquo; (R U R&rsquo; U R U2 R&rsquo;). If you do not see any matching headlights then perform the algorithm anywhere until they do show up, then you can perform the algorithm once more to complete the corners. You&rsquo;ll notice the section in brackets is exactly the same section we used previously to orient the yellow corners. This should make it slightly easier to memorize.</p>
+<p><img src="/images/pll_corners.png" alt="An image permuting the corners of last layer"></p>
+<p>Now for the final step, permutating the edge pieces. Typically, there should be 3 out of place edges. Set the completed side facing away from you and perform the following algorithm: F2 U&rsquo; R&rsquo; L F2 L&rsquo; R U&rsquo; F2. If the cube is still not solved, face the completed side away and perform the algorithm once more. If there are 4 out of place edges simply perform that algorithm anywhere and you should end up with 3 out of place edge pieces.</p>
+<p><img src="/images/pll_edges.png" alt="An image permuting the edges of last layer"></p>
+<p>And if you did everything correctly you should now have a solved Rubik&rsquo;s cube in front of you! Tada! With very little practice you&rsquo;ll be able to control the cube and have smoother turns ultimately lowering your solve time drastically. And if you choose to dedicate more than a weeks worth of practice, you can easily solve the cube in under a minute using this exact method. For the more daring, you can also learn other methods, shortcuts to skip steps, faster algorithms for more cases, and many more.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>If this was your very first solve, then congratulation! If you had trouble following some examples then feel free to let me know! I&rsquo;m always open to feedback. Hopefully you have gained a wider understanding and appreciation of the Rubik&rsquo;s Cube. I also hope to eventually write an article on how to solve a Rubik&rsquo;s Cube blindfolded! Which may sound daunting, but let me remind you that just a few minutes ago you also thought fully solving a Rubik&rsquo;s Cube was daunting. And trust me, although it is by no means easy, it is certaintly very doable for anyone as long as you put your mind to it. So I encourage all those to continue practicing the Rubik&rsquo;s Cube and even timing yourself to see if you can get faster and faster solves. Let me hear about your fastest solve!</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    <img class="about__logo" src="https://craneppeakare.github.io/images/profile.png" alt="Logo">
+<h1 class="about__title">craneppeakare</h1>
+<p class="about__description">Hey there! I&rsquo;m a life-long ultralearner, programmer, guitarist, gamer, translator, and many other things!</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/craneppeakare" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:henry.ka.huynh@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://instagram.com/hnenhhryuy/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://instagram.com/hryuyxx/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.youtube.com/c/PancakeSubs/" rel="me" aria-label="Youtube" title="Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-02-10
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+</p>
+<br /><br />
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

@@ -6,25 +6,21 @@
     <description>Recent content in Projects on craneppeakare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Aug 2023 02:56:46 -0700</lastBuildDate><atom:link href="https://craneppeakare.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Oct 2023 01:42:06 -0700</lastBuildDate>
+    <atom:link href="https://craneppeakare.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I used a Raspberry Pi to host my own NextCloud server</title>
       <link>https://craneppeakare.github.io/projects/raspberrypi-adventures/</link>
       <pubDate>Sat, 07 Oct 2023 01:42:06 -0700</pubDate>
-      
       <guid>https://craneppeakare.github.io/projects/raspberrypi-adventures/</guid>
       <description>To be written!</description>
     </item>
-    
     <item>
       <title>Creating an Infinite Scroller Minesweeper App</title>
       <link>https://craneppeakare.github.io/projects/infinite-minesweeper/</link>
       <pubDate>Wed, 09 Aug 2023 00:55:30 -0900</pubDate>
-      
       <guid>https://craneppeakare.github.io/projects/infinite-minesweeper/</guid>
-      <description>Right away I knew it would be a great concept however, I was by no means a game dev. Sure, I&amp;rsquo;ve dabbled here in there making basic platformers and getting used to the basic functions of a game through engines like Godot and Pygame. I sure as hell didn&amp;rsquo;t know anything about mobile game dev. So how did I do it?
-It all started when I had the idea to combine the typical infinite scroller style mobile games with an age old classic, Minesweeper, which to my knowledge hadn&amp;rsquo;t been done yet before.</description>
+      <description>Right away I knew it would be a great concept however, I was by no means a game dev. Sure, I&amp;rsquo;ve dabbled here in there making basic platformers and getting used to the basic functions of a game through engines like Godot and Pygame. I sure as hell didn&amp;rsquo;t know anything about mobile game dev. So how did I do it?&#xA;It all started when I had the idea to combine the typical infinite scroller style mobile games with an age old classic, Minesweeper, which to my knowledge hadn&amp;rsquo;t been done yet before.</description>
     </item>
-    
   </channel>
 </rss>
