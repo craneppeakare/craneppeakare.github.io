@@ -6,8 +6,22 @@
     <description>Recent content in homepage on craneppeakare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Feb 2024 17:08:57 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2024 18:55:53 -0800</lastBuildDate>
     <atom:link href="https://craneppeakare.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking</title>
+      <link>https://craneppeakare.github.io/notes/networking/</link>
+      <pubDate>Sat, 09 Mar 2024 18:55:53 -0800</pubDate>
+      <guid>https://craneppeakare.github.io/notes/networking/</guid>
+      <description>Tools ping traceroute whois dig (manually query recursive DNS servers of our choice for information about domains) TCP/IP Model Abstraction model for understanding the different stages of networking. Contains 7 layers of abstraction, each on built on top of the next.&#xA;Layer 5: Application + ---------- + ------------- + | | | | L5 | Data (Data) | | Header | | | | | + ---------- + ------------- + Tries to establish a connection to the recieving computer across a network.</description>
+    </item>
+    <item>
+      <title>[Review] Ultralearning by Scott H. Young</title>
+      <link>https://craneppeakare.github.io/books/ultralearningreview/</link>
+      <pubDate>Thu, 22 Feb 2024 19:37:45 -0700</pubDate>
+      <guid>https://craneppeakare.github.io/books/ultralearningreview/</guid>
+      <description>Finally my long awaited review of the book &amp;ldquo;Ultralearning&amp;rdquo; by Scott H. Young. I have been putting this off for far too long. This will not be a summary of the book as I have already done so in another post which you can find here. As someone who loves constantly learning new hobbies I thought this book would be right up my alley for leveling up my abilities.&#xA;The book opens itself well by defining the demographic who would benefit the most from this book.</description>
+    </item>
     <item>
       <title>The Rubik&#39;s Cube: An Icon of Pop Culture and Solvable Puzzle for Everyone (With Visuals)</title>
       <link>https://craneppeakare.github.io/hobbies/rubiks-cube-how-to/</link>
@@ -21,13 +35,6 @@
       <pubDate>Sat, 07 Oct 2023 01:42:06 -0700</pubDate>
       <guid>https://craneppeakare.github.io/projects/raspberrypi-adventures/</guid>
       <description>To be written!</description>
-    </item>
-    <item>
-      <title>[Review] Ultralearning by Scott H. Young</title>
-      <link>https://craneppeakare.github.io/books/ultralearningreview/</link>
-      <pubDate>Wed, 09 Aug 2023 19:37:45 -0700</pubDate>
-      <guid>https://craneppeakare.github.io/books/ultralearningreview/</guid>
-      <description>To be written! (I still haven&amp;rsquo;t finished this boook)</description>
     </item>
     <item>
       <title>[Summary] Ultralearning by Scott H. Young</title>

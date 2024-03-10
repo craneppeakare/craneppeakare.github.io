@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Networking &ndash; craneppeakare</title>
+<meta name="description" content="UBC Computer Science Graduate - Life-long Ultralearner - Programmer - Linux Enthusiast - Guitarist - Translator - Gamer - and many more!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://craneppeakare.github.io/css/palettes/tokyo-night-dark.css">
+<link rel="stylesheet" href="https://craneppeakare.github.io/css/risotto.css">
+<link rel="stylesheet" href="https://craneppeakare.github.io/css/custom.css">
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="https://craneppeakare.github.io/" class="page__logo-inner">craneppeakare</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/about/" title="About">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/books/" title="Books">Books</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/hobbies/" title="Hobbies">Hobbies</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://craneppeakare.github.io/notes/" title="Notes">Notes</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/post/" title="Posts">Posts</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://craneppeakare.github.io/projects/" title="Projects">Projects</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Networking</h1>
+    </header>
+    
+    <div class="content__body">
+        <h2 id="tools">Tools</h2>
+<ul>
+<li>ping</li>
+<li>traceroute</li>
+<li>whois</li>
+<li>dig (manually query recursive DNS servers of our choice for information about domains)</li>
+</ul>
+<h2 id="tcpip-model">TCP/IP Model</h2>
+<p>Abstraction model for understanding the different stages of networking. Contains 7 layers of abstraction, each on built on top of the next.</p>
+<h3 id="layer-5-application">Layer 5: Application</h3>
+<pre tabindex="0"><code>                                       + ---------- + ------------- +
+                                       |            |               |
+                                       |     L5     |  Data (Data)  |
+                                       |   Header   |               |
+                                       |            |               |
+                                       + ---------- + ------------- +
+</code></pre><p>Tries to establish a connection to the recieving computer across a network. Ie. an ssh session, or a session token.</p>
+<p>Application layer transmits data to another application and standardizes the data so that the other application can understand the data. Can also include any application-level encryption.</p>
+<h3 id="layer-4-transport">Layer 4: Transport</h3>
+<pre tabindex="0"><code>                          + ---------- + -------------------------- +
+                          |            |                            |
+                          |     L4     |            Data            |
+                          |   Header   |    (Segments/Datagrams)    |
+                          |            |                            |
+                          + ---------- + -------------------------- +
+</code></pre><p>Splits data into a standardized protocal (ex. TCP or UDP). TCP exchanges packets in a constant connection while the session is alive and is better suited for accuracy. UDP prioritizes speed and is better suited for cases like video calling.</p>
+<p>TCP is split into <em>segments</em></p>
+<p>UDP is split into <em>datagrams</em></p>
+<h3 id="layer-3-internet">Layer 3: Internet</h3>
+<pre tabindex="0"><code>             + ---------- + --------------------------------------- +
+             |            |                                         |
+             |     L3     |              Data (Packets)             |
+             |   Header   |                                         |
+             |            |                                         |
+             + ---------- + --------------------------------------- +
+</code></pre><p>Resolving IP addresses and locating the best path to take to exchange informaton. IPv4 and IPv6 live here.</p>
+<h3 id="layer-2-data-link">Layer 2: Data-link</h3>
+<pre tabindex="0"><code>+ ---------- + ---------------------------------------------------- + ---------- +
+|            |                                                      |            |
+|     L2     |                     Data (Frame)                     |     L2     |
+|   Header   |                                                      |   Trailer  |
+|            |                                                      |            |
++ ---------- + ---------------------------------------------------- + ---------- +
+</code></pre><p>Physical addressing of information. Recieves packets from its local network and attaches MAC-address information. May be responsible for presenting the data in a suitable way for the physical layer. And should also check for corruption on recieving.</p>
+<h3 id="layer-1-physical">Layer 1: Physical</h3>
+<p>The physical medium that&rsquo;s used to transmit data. Can be copper wires, cable, wi-fi, fibre optic, etc.</p>
+<h2 id="tcp-protocol">TCP protocol</h2>
+<p>The TCP header (from <a href="https://datatracker.ietf.org/doc/html/rfc9293">RFC 9293</a>)</p>
+<pre tabindex="0"><code>    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |          Source Port          |       Destination Port        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                        Sequence Number                        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                    Acknowledgment Number                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Data |       |C|E|U|A|P|R|S|F|                               |
+   | Offset| Rsrvd |W|C|R|C|S|S|Y|I|            Window             |
+   |       |       |R|E|G|K|H|T|N|N|                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |           Checksum            |         Urgent Pointer        |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                           [Options]                           |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                                                               :
+   :                             Data                              :
+   :                                                               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</code></pre><h3 id="the-3-way-handshake-3whs">The 3-way handshake (3WHS)</h3>
+<p>The 3WHS must occur for a tcp session to be established between 2 servers. If there is an ACK becomes lost in transit the server will retry using exponential backoff.</p>
+<pre tabindex="0"><code>Client       Server
+  |            |
+  |            |
+  |     SYN    |
+  | ---------&gt; |
+  |            |
+  |   SYN/ACK  |
+  | &lt;--------- |
+  |            |
+  |     ACK    |
+  | ---------&gt; |
+  |            |
+  |            |
+  v            v
+</code></pre>
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    <img class="about__logo" src="https://craneppeakare.github.io/images/profile.png" alt="Logo">
+<h1 class="about__title">craneppeakare</h1>
+<p class="about__description">UBC Computer Science Graduate - Life-long Ultralearner - Programmer - Linux Enthusiast - Guitarist - Translator - Gamer - and many more!</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/craneppeakare" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:henry.ka.huynh@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://instagram.com/hnenhhryuy/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://instagram.com/hryuyxx/" rel="me" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://www.youtube.com/c/PancakeSubs/" rel="me" aria-label="Youtube" title="Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-03-09
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
