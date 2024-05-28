@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://craneppeakare.github.io/notes/x86_64-assembly-notes/</loc>
+    <lastmod>2024-05-27T21:46:51-07:00</lastmod>
+  </url><url>
     <loc>https://craneppeakare.github.io/projects/i-built-a-scrabble-trainer-to-beat-my-friends/</loc>
     <lastmod>2024-04-05T14:08:57-07:00</lastmod>
   </url><url>
