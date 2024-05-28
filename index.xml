@@ -20,7 +20,7 @@
       <link>https://craneppeakare.github.io/notes/reporting-bug-template/</link>
       <pubDate>Fri, 15 Mar 2024 23:07:19 -0700</pubDate>
       <guid>https://craneppeakare.github.io/notes/reporting-bug-template/</guid>
-      <description>This holds a basic tempplate and guide for building bug reports that can be filled out quickly.&#xA;Title: Severity: Informational: no real current security impact Low: Business impact is low Medium: Potential to cause harm to users but not revealing data High: Potential to reveal customer data or aids in exploitation of other vulnerabilities Critical: High risk of personal/confidential data exposure, general system compromise, and other severe impacts to business Description: Short description of said vulnerability</description>
+      <description>This holds a basic template and guide for building bug reports that can be filled out quickly.&#xA;Title: Severity: Informational: no real current security impact Low: Business impact is low Medium: Potential to cause harm to users but not revealing data High: Potential to reveal customer data or aids in exploitation of other vulnerabilities Critical: High risk of personal/confidential data exposure, general system compromise, and other severe impacts to business Description: Short description of said vulnerability</description>
     </item>
     <item>
       <title>Networking</title>
@@ -49,13 +49,6 @@
       <pubDate>Wed, 09 Aug 2023 00:55:30 -0900</pubDate>
       <guid>https://craneppeakare.github.io/projects/infinite-minesweeper/</guid>
       <description>Right away I knew it would be a great concept however, I was by no means a game dev. Sure, I&amp;rsquo;ve dabbled here in there making basic platformers and getting used to the basic functions of a game through engines like Godot and Pygame. I sure as hell didn&amp;rsquo;t know anything about mobile game dev. So how did I do it?&#xA;It all started when I had the idea to combine the typical infinite scroller style mobile games with an age old classic, Minesweeper, which to my knowledge hadn&amp;rsquo;t been done yet before.</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://craneppeakare.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://craneppeakare.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
     </item>
   </channel>
 </rss>
