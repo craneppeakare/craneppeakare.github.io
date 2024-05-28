@@ -4,10 +4,24 @@
     <title>homepage on craneppeakare</title>
     <link>https://craneppeakare.github.io/</link>
     <description>Recent content in homepage on craneppeakare</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2024 18:55:53 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2024 14:08:57 -0700</lastBuildDate>
     <atom:link href="https://craneppeakare.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Built a Scrabble Trainer to Beat My Friends</title>
+      <link>https://craneppeakare.github.io/projects/i-built-a-scrabble-trainer-to-beat-my-friends/</link>
+      <pubDate>Fri, 05 Apr 2024 14:08:57 -0700</pubDate>
+      <guid>https://craneppeakare.github.io/projects/i-built-a-scrabble-trainer-to-beat-my-friends/</guid>
+      <description>So me and my close friends love playing Discord&amp;rsquo;s in-client game Letter League, which is based off of the popular word game Scrabble. We&amp;rsquo;d play for hours at a time and one of our friends in particular, we will call him &amp;ldquo;Nigel&amp;rdquo;, tends to consistently win somewhat often. And I&amp;rsquo;m an ultra competitive person so I built a trainer program to help me find 7 letter words, known as &amp;ldquo;bingos&amp;rdquo; in scabble, and go on the training arc of my life and beat him to the ground.</description>
+    </item>
+    <item>
+      <title>Reporting Bug Template</title>
+      <link>https://craneppeakare.github.io/notes/reporting-bug-template/</link>
+      <pubDate>Fri, 15 Mar 2024 23:07:19 -0700</pubDate>
+      <guid>https://craneppeakare.github.io/notes/reporting-bug-template/</guid>
+      <description>This holds a basic tempplate and guide for building bug reports that can be filled out quickly.&#xA;Title: Severity: Informational: no real current security impact Low: Business impact is low Medium: Potential to cause harm to users but not revealing data High: Potential to reveal customer data or aids in exploitation of other vulnerabilities Critical: High risk of personal/confidential data exposure, general system compromise, and other severe impacts to business Description: Short description of said vulnerability</description>
+    </item>
     <item>
       <title>Networking</title>
       <link>https://craneppeakare.github.io/notes/networking/</link>
@@ -16,25 +30,11 @@
       <description>Tools ping traceroute whois dig (manually query recursive DNS servers of our choice for information about domains) TCP/IP Model Abstraction model for understanding the different stages of networking. Contains 7 layers of abstraction, each on built on top of the next.&#xA;Layer 5: Application + ---------- + ------------- + | | | | L5 | Data (Data) | | Header | | | | | + ---------- + ------------- + Tries to establish a connection to the recieving computer across a network.</description>
     </item>
     <item>
-      <title>[Review] Ultralearning by Scott H. Young</title>
-      <link>https://craneppeakare.github.io/books/ultralearningreview/</link>
-      <pubDate>Thu, 22 Feb 2024 19:37:45 -0700</pubDate>
-      <guid>https://craneppeakare.github.io/books/ultralearningreview/</guid>
-      <description>Finally my long awaited review of the book &amp;ldquo;Ultralearning&amp;rdquo; by Scott H. Young. I have been putting this off for far too long. This will not be a summary of the book as I have already done so in another post which you can find here. As someone who loves constantly learning new hobbies I thought this book would be right up my alley for leveling up my abilities.&#xA;The book opens itself well by defining the demographic who would benefit the most from this book.</description>
-    </item>
-    <item>
       <title>The Rubik&#39;s Cube: An Icon of Pop Culture and Solvable Puzzle for Everyone (With Visuals)</title>
       <link>https://craneppeakare.github.io/hobbies/rubiks-cube-how-to/</link>
       <pubDate>Sat, 10 Feb 2024 17:08:57 -0800</pubDate>
       <guid>https://craneppeakare.github.io/hobbies/rubiks-cube-how-to/</guid>
       <description>The Rubik&amp;rsquo;s Cube, invented in 1974 by Ernő Rubik, is a icon of pop culture appearing in major shows such as The Big Bang Theory, The Simpsons, various Spiderman movies, and even in Rick and Morty. Although pop culture loves to portray the puzzle as if only geniuses can solve the cube, in reality anyone can learn to solve one is as little as 5 minutes. And if you invest a little bit more time you can gain the skills to solve it in under 60 seconds and impress all your friends.</description>
-    </item>
-    <item>
-      <title>How I used a Raspberry Pi to host my own NextCloud server</title>
-      <link>https://craneppeakare.github.io/projects/raspberrypi-adventures/</link>
-      <pubDate>Sat, 07 Oct 2023 01:42:06 -0700</pubDate>
-      <guid>https://craneppeakare.github.io/projects/raspberrypi-adventures/</guid>
-      <description>To be written!</description>
     </item>
     <item>
       <title>[Summary] Ultralearning by Scott H. Young</title>

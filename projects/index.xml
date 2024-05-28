@@ -4,16 +4,16 @@
     <title>Projects on craneppeakare</title>
     <link>https://craneppeakare.github.io/projects/</link>
     <description>Recent content in Projects on craneppeakare</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Oct 2023 01:42:06 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2024 14:08:57 -0700</lastBuildDate>
     <atom:link href="https://craneppeakare.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How I used a Raspberry Pi to host my own NextCloud server</title>
-      <link>https://craneppeakare.github.io/projects/raspberrypi-adventures/</link>
-      <pubDate>Sat, 07 Oct 2023 01:42:06 -0700</pubDate>
-      <guid>https://craneppeakare.github.io/projects/raspberrypi-adventures/</guid>
-      <description>To be written!</description>
+      <title>I Built a Scrabble Trainer to Beat My Friends</title>
+      <link>https://craneppeakare.github.io/projects/i-built-a-scrabble-trainer-to-beat-my-friends/</link>
+      <pubDate>Fri, 05 Apr 2024 14:08:57 -0700</pubDate>
+      <guid>https://craneppeakare.github.io/projects/i-built-a-scrabble-trainer-to-beat-my-friends/</guid>
+      <description>So me and my close friends love playing Discord&amp;rsquo;s in-client game Letter League, which is based off of the popular word game Scrabble. We&amp;rsquo;d play for hours at a time and one of our friends in particular, we will call him &amp;ldquo;Nigel&amp;rdquo;, tends to consistently win somewhat often. And I&amp;rsquo;m an ultra competitive person so I built a trainer program to help me find 7 letter words, known as &amp;ldquo;bingos&amp;rdquo; in scabble, and go on the training arc of my life and beat him to the ground.</description>
     </item>
     <item>
       <title>Creating an Infinite Scroller Minesweeper App</title>
